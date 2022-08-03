@@ -6,8 +6,9 @@
     import "dayjs/locale/es";
 </script>
 
-<section class="flex p-4 space-x-6">
-    {#await futureDaysWeather then elements }
+<section class="p-4 grid place-content-center md:place-content-start">
+    <div class="w-fit flex md:flex-row flex-col md:space-x-6 space-x-0 space-y-8 md:space-y-0">
+        {#await futureDaysWeather then elements }
         {#each elements as element}
             <article class="highlight-card">
                 <span class="text-highlight">{dayjs(element.date).locale("es").format("D MMMM, YYYY")}</span>
@@ -16,4 +17,5 @@
             </article>
         {/each}
     {/await}
+    </div>
 </section>

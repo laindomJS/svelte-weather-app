@@ -16,6 +16,9 @@ module.exports = {
         'dark-bg-color' : '#100e1d',
         'dark-title-color' : '#e7e7eb',
         'dark-text-color' : '#a09fb1'
+      },
+      padding: {
+        '22' : '88px'
       }
     },
   },

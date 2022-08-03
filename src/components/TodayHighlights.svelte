@@ -3,8 +3,8 @@
     const weatherHighlights = getWeatherHighlights();
 </script>
 
-<section class="w-full h-fit p-4">
-    <h2 class="font-titles font-semibold text-4xl text-black dark:text-dark-title-color">Today's Highlights</h2>
+<section class="w-full h-fit md:p-4 p-4 md:mt-0 mt-6 bg-slate-300 dark:bg-dark-bg-color">
+    <h2 class="font-titles font-semibold md:text-4xl text-3xl text-black dark:text-dark-title-color md:text-left text-center">Today's Highlights</h2>
     <div class="w-full h-auto mt-6 flex flex-wrap gap-10">
         {#await weatherHighlights then highlight }
             <article class="today-card">
