@@ -3,7 +3,7 @@ import { getIp } from "./getIp";
 const FETCH_OPTIONS = {
 	method: 'GET',
 	headers: {
-		'X-RapidAPI-Key': import.meta.env.VITE_API_KEY,
+		'X-RapidAPI-Key': 'e9c02f08b3msh14f865e23df8789p16712ejsnd0a6f63f625e',
 		'X-RapidAPI-Host': 'weatherapi-com.p.rapidapi.com'
 	}
 };
