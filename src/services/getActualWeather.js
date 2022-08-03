@@ -24,7 +24,7 @@ export async function getActualWeather(){
     const { country, localtime, name } = location;
     const { condition, temp_c } = current;
     
-    console.log(data)
+    // console.log(data)
 
     return {
         text : condition.text,
