@@ -20,11 +20,11 @@
 }
 
 .today-card {
-    @apply w-80 h-32 bg-white dark:bg-dark-card-color text-center p-4 shadow-xl;
+    @apply w-80 h-36 bg-white dark:bg-dark-card-color text-center p-6 shadow-xl;
 }
 
 .today-title {
-    @apply font-titles font-medium text-lg text-black dark:text-dark-title-color mb-4;
+    @apply font-titles font-medium text-lg text-black dark:text-dark-title-color mb-2;
 }
 
 .today-data {

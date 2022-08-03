@@ -16,6 +16,7 @@
 			condition = true;
 		}
 	}
+
 </script>
 
 <main class="w-full h-screen bg-slate-300 dark:bg-dark-bg-color flex flex-row">
