@@ -23,7 +23,19 @@
 	
 	<!-- LEFT SECTION -->
 	<article class="bg-white dark:bg-dark-card-color w-full md:w-2/5 md:p-12 p-12">
-		<button class="btn" on:click={toggle}>{condition === false ? 'Light Mode' : 'Dark Mode'}</button>
+		<!-- TOGGLE -->
+		<label for="purple-toggle" class="inline-flex relative items-center mr-5 cursor-pointer">
+			
+			<input type="checkbox" value="" id="purple-toggle" class="sr-only peer" checked>
+			
+			<div on:click={toggle} class="w-11 h-6 bg-gray-200 rounded-full peer dark:bg-gray-700 peer-focus:ring-4 peer-focus:ring-purple-300 dark:peer-focus:ring-purple-800 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-purple-600"></div>
+			
+			<span class="ml-3 text-sm font-display font-semibold text-gray-900 dark:text-gray-300">
+				{condition ? 'Dark Mode' : 'Light Mode'}
+			</span>
+
+		  </label>
+		  <!-- TOGGLE -->
 		<section class="w-full flex flex-col text-center justify-center mt-12">
 			{#await getWeather then weather }
 				<img class="w-28 mx-auto" src="{weather.icon}" alt="{weather.text}">

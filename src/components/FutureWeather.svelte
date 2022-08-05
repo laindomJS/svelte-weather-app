@@ -13,7 +13,11 @@
             <article class="highlight-card">
                 <span class="text-highlight">{dayjs(element.date).locale("es").format("D MMMM, YYYY")}</span>
                 <img class="w-16 h-16 mx-auto mb-2" src="{element.day.condition.icon}" alt="{element.day.condition.text}">
-                <span class="mt-4 text-highlight">{element.day.mintemp_c}ºc - {element.day.maxtemp_c}ºc</span>
+                <div class="flex mt-2 align-center justify-center">
+                    <span class="font-display text-slate-500 dark:text-slate-300 font-semibold">{element.day.mintemp_c}ºc</span>
+                    <span>-</span>
+                    <span class="font-display text-black dark:text-dark-text-color font-bold">{element.day.maxtemp_c}ºc</span>
+                </div>
             </article>
         {/each}
     {/await}
