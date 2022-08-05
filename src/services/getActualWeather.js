@@ -17,8 +17,6 @@ export async function getActualWeather(){
     const response = await fetch(`https://weatherapi-com.p.rapidapi.com/current.json?q=${ip}`, FETCH_OPTIONS)
     const data = await response.json()
     
-    // console.log(data);
-    
     // DESTRUCTURING DATA OF THE RESPONSE
     const { current, location } = data;
     const { country, localtime, name } = location;
